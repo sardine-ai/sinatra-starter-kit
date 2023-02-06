@@ -49,6 +49,7 @@ GEM
       tilt (~> 2.0)
     sinatra-flash (0.3.0)
       sinatra (>= 1.0.0)
+    sqlite3 (1.6.0-x86_64-darwin)
     tilt (2.0.11)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -59,12 +60,14 @@ PLATFORMS
 DEPENDENCIES
   pry
   puma
+  rack
   rack-contrib
   rake
   sinatra
-  sinatra-activerecord (~> 2.0)
+  sinatra-activerecord
   sinatra-contrib
   sinatra-flash
+  sqlite3
 
 BUNDLED WITH
    2.3.26
