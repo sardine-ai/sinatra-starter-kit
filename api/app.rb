@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative '../config/boot'
 require 'sinatra'
 require 'sinatra/activerecord'
 require 'sinatra/reloader'
@@ -12,6 +13,5 @@ module Api
 end
 
 Dir[
-  'models/*.rb',
   'api/**/*.rb',
 ].each { |f| require File.expand_path(f) }
